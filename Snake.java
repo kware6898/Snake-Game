@@ -11,9 +11,6 @@ public class Snake{
             snakePartList.addFirst(head);
             head.setType(Type.SNAKE);
             board.setCell(head.getRow(), head.getCol(), Type.SNAKE);
-            // System.out.print(head.getRow());
-            // System.out.print(" ");
-            // System.out.println(head.getCol());
         }
     }
 
@@ -34,14 +31,6 @@ public class Snake{
         board.setCell(head.getRow(), head.getCol(), Type.SNAKE);
         snakePartList.addFirst(head);
     }
-
-    // public boolean checkCrash(Cell nextCell){
-    //     if(nextCell.getType()==Type.SNAKE || nextCell.getType()==Type.WALL){
-    //         return true;
-    //     }
-    //     else if()
-    //     return false;
-    // }
 
     public LinkedList<Cell> getSnakePartList(){
         return snakePartList;
